@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:textAlignment="center"
+    tools:context=".Art_Medium">
+
+    <CheckBox
+        android:id="@+id/water"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="#134E4C"
+        android:text="Water"
+        android:textColor="#C7FFB3"
+        app:buttonIconTint="#0A3531"
+        app:layout_constraintEnd_toStartOf="@+id/brushes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <CheckBox
+        android:id="@+id/tissue"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:background="#134E4C"
+        android:text="Tissues"
+        android:textColor="#C7FFB3"
+        app:buttonIconTint="#0A3531"
+        app:layout_constraintEnd_toStartOf="@+id/tape"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pallete" />
+
+    <CheckBox
+        android:id="@+id/eraser"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:background="#134E4C"
+        android:text="Eraser"
+        android:textColor="#C7FFB3"
+        app:buttonIconTint="#0A3531"
+        app:layout_constraintEnd_toStartOf="@+id/sharpner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/water" />
+
+    <CheckBox
+        android:id="@+id/pallete"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:background="#134E4C"
+        android:text="Pallete"
+        android:textColor="#C7FFB3"
+        app:buttonIconTint="#0A3531"
+        app:layout_constraintEnd_toStartOf="@+id/pencil"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eraser" />
+
+    <CheckBox
+        android:id="@+id/tape"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:background="#134E4C"
+        android:text="Tape"
+        android:textColor="#C7FFB3"
+        app:buttonIconTint="#0A3531"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tissue"
+        app:layout_constraintTop_toBottomOf="@+id/pencil" />
+
+    <CheckBox
+        android:id="@+id/pencil"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:background="#134E4C"
+        android:text="2b-2h pancils"
+        android:textColor="#C7FFB3"
+        app:buttonIconTint="#0A3531"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pallete"
+        app:layout_constraintTop_toBottomOf="@+id/sharpner" />
+
+    <CheckBox
+        android:id="@+id/brushes"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="#134E4C"
+        android:text="Brushes"
+        android:textColor="#C7FFB3"
+        app:buttonIconTint="#2D8823"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/water"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <CheckBox
+        android:id="@+id/sharpner"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:background="#134E4C"
+        android:text="Sharpner"
+        android:textColor="#C7FFB3"
+        app:buttonIconTint="#0A3531"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eraser"
+        app:layout_constraintTop_toBottomOf="@+id/brushes" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="supplies needed with medium:"
+        android:textColor="#D0FFBE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediumspinner" />
+
+    <Spinner
+        android:id="@+id/mediumspinner"
+        android:layout_width="327dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#1B5149"
+        android:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Medium"
+        android:textColor="#D0FFBE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+</androidx.constraintlayout.widget.ConstraintLayout>
